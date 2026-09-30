@@ -1,0 +1,32 @@
+{
+  "name": "resolveai",
+  "version": "1.0.0",
+  "description": "AI-Powered Incident & Customer Issue Resolution Platform",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\" --names \"server,client\" --prefix-colors \"blue,green\"",
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev",
+    "build": "npm --prefix client run build",
+    "test": "npm --prefix server test",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.4"
+  },
+  "keywords": [
+    "incident-management",
+    "rag",
+    "generative-ai",
+    "vector-search",
+    "mongodb-atlas",
+    "react",
+    "express"
+  ],
+  "author": "ResolveAI Team",
+  "license": "UNLICENSED"
+}

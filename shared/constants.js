@@ -1,0 +1,63 @@
+/**
+ * ResolveAI Shared System Constants
+ * Source of truth: spec.md
+ */
+
+export const USER_ROLES = Object.freeze({
+  ADMIN: 'ADMIN',
+  MANAGER: 'MANAGER',
+  SUPPORT_AGENT: 'SUPPORT_AGENT',
+  ENGINEER: 'ENGINEER'
+});
+
+export const TICKET_STATUSES = Object.freeze({
+  OPEN: 'OPEN',
+  IN_PROGRESS: 'IN_PROGRESS',
+  WAITING_FOR_CUSTOMER: 'WAITING_FOR_CUSTOMER',
+  ESCALATED: 'ESCALATED',
+  RESOLVED: 'RESOLVED',
+  CLOSED: 'CLOSED'
+});
+
+export const TICKET_PRIORITIES = Object.freeze({
+  LOW: 'LOW',
+  MEDIUM: 'MEDIUM',
+  HIGH: 'HIGH',
+  CRITICAL: 'CRITICAL'
+});
+
+export const TICKET_CATEGORIES = Object.freeze({
+  PAYMENT: 'PAYMENT',
+  AUTHENTICATION: 'AUTHENTICATION',
+  ORDER: 'ORDER',
+  DELIVERY: 'DELIVERY',
+  ACCOUNT: 'ACCOUNT',
+  PERFORMANCE: 'PERFORMANCE',
+  BUG: 'BUG',
+  FEATURE_REQUEST: 'FEATURE_REQUEST',
+  SECURITY: 'SECURITY',
+  OTHER: 'OTHER'
+});
+
+export const INCIDENT_STATUSES = Object.freeze({
+  DETECTED: 'DETECTED',
+  INVESTIGATING: 'INVESTIGATING',
+  IDENTIFIED: 'IDENTIFIED',
+  FIX_IN_PROGRESS: 'FIX_IN_PROGRESS',
+  RESOLVED: 'RESOLVED',
+  POSTMORTEM: 'POSTMORTEM',
+  CLOSED: 'CLOSED'
+});
+
+export const INCIDENT_SEVERITIES = Object.freeze({
+  P1: 'P1',
+  P2: 'P2',
+  P3: 'P3',
+  P4: 'P4'
+});
+
+export const CONFIDENCE_THRESHOLDS = Object.freeze({
+  HIGH: 0.85,
+  MEDIUM: 0.65,
+  LOW: 0.0
+});
